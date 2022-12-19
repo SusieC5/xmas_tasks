@@ -5,10 +5,10 @@ He wants a script he can run to get the weather at a chosen location right now.
 OpenWeatherMap.org offers an API which you should be able to use (once you've signed up for free for an API key). #>
 
 
+
 #API key and city
 $key = "361931c8542ea11f948b6bdb597cbefb"
 $city = Read-Host "Please enter city" 
-
 
 #getting latitude and longitude for getWeather function
 $uri = "http://api.openweathermap.org/geo/1.0/direct?q=$city&limit=1&appid=$key"
@@ -18,7 +18,6 @@ $lon = $response.lon
 
 #get weather deteils from openweathermap.org
 function getWeather() {   
-    
     try{
 
         $uri = "https://api.openweathermap.org/data/3.0/onecall?lat=$lat&lon=$lon&exclude=minutely,daily&units=metric&appid=$key"
