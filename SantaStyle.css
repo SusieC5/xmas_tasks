@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #99001A;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #11090b;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+table {
+    font-size: 12px;
+    border: 0px;
+    font-family: "Lucida Console", Monaco, monospace;
+    margin-left:auto;margin-right:auto
+}
+
+td {
+    padding: 4px;
+    margin: 0px;
+    border: 0;
+    font-size: 12px;
+    
+}
+
+th {
+    background: #FF1919;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background: #f5e7f0;
+    
+}
