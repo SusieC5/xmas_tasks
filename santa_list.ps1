@@ -27,3 +27,4 @@ $htmlParams = @{
 
 [PSCustomObject]$list | ConvertTo-Html -As Table @htmlParams -CssUri "SantaStyle.css" | Out-File -FilePath ./SantaList.html
 Invoke-Expression ./SantaList.html
+
