@@ -5,13 +5,13 @@ Write a script that can show the lyrics of the twelve days of Christmas, without
 and if you can sneak an emoji in there too, that'd be lovely.#>
 
 #make array for 12 items in the song
-$gifts = @("a partridge in a pear tree", "Two turtle-doves", "Three French hens", "Four calling birds", "Five golden rings", "Six geese a-laying", "Seven swans a-swimming", "Eight maids a milking", "Nine ladies dancing", "Ten lods a-leaping", "Twelve drummers drumming")
+$gifts = @("a partridge in a pear tree", "Two turtle-doves", "Three French hens", "Four calling birds", "Five golden rings", "Six geese a-laying", "Seven swans a-swimming", "Eight maids a milking", "Nine ladies dancing", "Ten lords a-leaping", "Eleven pipers piping", "Twelve drummers drumming")
 $count = $gifts.Count
    
 #listing previous gifts
 function pastgifts() {
     for ($gift=$gift; $gift -gt 0; $gift--){
-        $gifts[$gift] 
+        $gifts[$gift]
         Start-Sleep -seconds 2
         
 }
@@ -23,7 +23,7 @@ for ($gift=0; $gift -lt $count; $gift++){
     if ($gift -eq 0){
         Write-Host "On the 1st day of Christmas my true love gave to me" 
         Start-Sleep -seconds 2
-        $gifts[$gift]
+        write-host $gifts[$gift]
          
     }
 
@@ -51,7 +51,6 @@ start-sleep -Seconds 2
 clear-host
 }
 }
-
 
 
 Clear-Host
